@@ -3,7 +3,10 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: "./src/main.js",
-  output: { path: path.resolve(__dirname), filename: "bundle.js" },
+  output: {
+    path: path.resolve(__dirname, "public/assets/js"),
+    filename: "bundle.js",
+  },
   module: {
     rules: [
       {
